@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Account Statement</title>
+  </head>
+  <body class="col">
+      <section id="header" class="dashboard">
+        <div class="logo-user">
+        <img src="assets/img/logo2.png" alt="" />
+          <div class="user">
+            <img src="assets/img/user.png" alt="">
+            <div class="dropdown-admin">Admin</div>
+          </div>
+        </div>
+        <div class="navbar">
+            <ul class="menu">
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a class="active" href="statement.html">Account Statement</a></li>
+              <li><a href="transaction.html">Transaction Management</a></li>
+              <li><a href="report.html">Report</a></li>
+              <li><a href="table.html" class="mt-table">Master Table</a></li>
+              <li><a href="user_management.html">User Management</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="container-statement"> 
+        <div class="page-title">
+          <img src="assets/img/vector.png" alt="">
+          <h1>Account Statement</h1>
+        </div> 
+        <div class="transaction-statement">
+            <div class="trans-pln">
+              <h1>Account Statement</h1>
+                <div class="input-parameter">
+                  <h1>Input Parameter</h1>
+                  <div class="filter">
+                    <div class="input-account">
+                      <div class="filter-account">
+                        <label for="" class="label">Tanggal Transaksi</label>
+                        <div class="select-tanggal">
+                          <img src="assets/img/calenderIcon.png" alt="">
+                          <span>3 Mar 2023 - 9 Mar 2023</span>
+                          <img src="assets/img/arrow2.png" id="arrowIcon4">
+                        </div>
+                      </div>
+                      <div class="select-keyword">
+                        <label for="">Keyword</label>
+                        <div id="select-filter">
+                          <p id="selectedFilter">Nomor Rekening</p>
+                          <img src="assets/img/arrow2.png" id="arrowIcon2">
+                        </div>
+                        <ul id="list-filter" class="hide-statement">
+                          <li class="options-filter">
+                            <p>Nomor Rekening</p>
+                          </li>
+                          <li class="options-filter">
+                            <p>ID Account</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="select-bank">
+                        <div id="value-bank">
+                          <p id="selected-bank">Mandiri - 123456</p>
+                          <img src="assets/img/arrowBank.png" id="arrowBank">
+                        </div>
+                        <ul id="list-bank" class="hide-statement-bank">
+                          <li class="options-bank">
+                            <p>123456789 (PLN Icon Plus - Mandiri)</p>
+                          </li>
+                          <li class="options-bank">
+                            <p>123456789 (PLN Icon Plus - BRI)</p>
+                          </li>
+                          <li class="options-bank">
+                            <p>123456789 (PLN Icon Plus - BSI)</p>
+                          </li>
+                          <li class="options-bank">
+                            <p>123456789 (PLN Icon Plus - BNI)</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="btn-statement">
+                        <button type="submit">Cari</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="unduhTop-page">
+              <div class="unduhTop">
+                <button id="btn-adduser"><img src="assets/img/unduh.png" alt="Image"></button>
+                <button id="btn-topup"><img src="assets/img/topup.png" alt="Image"></button>
+                <div id="modalToptup" class="modalTop">
+                  <div class="modal-topup">
+                    <div class="title-close-topup">
+                      <h1>Topup Account</h1>
+                      <span class="close">&times;</span>
+                    </div>
+                    <div class="form-input-topup">
+                       <form action="/action_page.php">
+                        <label for="fname">Nomor Rekening</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Nomor Rekening" >
+                        <label for="lname">Nominal Topup</label>
+                        <input type="text" id="lname" name="lastname" placeholder="0">
+                      </form>
+                      <div class="evidence">
+                        <label for="">Evidence Topup</label>
+                        <div class="dokumen">Upload Dokumen Topup Account Dibawah Ini</div>
+                        <div class="evi-content">
+                          <div class="file-dok">
+                            <img src="assets/img/file.png" id="arrowIcon2"><br>
+                            <span class="updok">Upload Dokumen Evidence Top Up</span><br>
+                            <span class="forfile">Format File Berupa File JPG atau PNG, Maksimum Ukuran 5MB</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <footer class="foo">
+                      <div class="cancel-submit">
+                        <button type="cancel">Batal</button>
+                        <button type="submit">Simpan</button>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+              <div class="page">
+                <span>Tampilkan</span>
+                <div id="select-page">
+                  <p id="selectedPage">10</p>
+                  <img src="assets/img/arrowPage.png" id="arrowPage">
+                </div>
+                <ul id="list-page" class="hide-statement-page">
+                  <li class="pages-options">
+                    <p>10</p>
+                  </li>
+                  <li class="pages-options">
+                    <p>20</p>
+                  </li>
+                </ul>
+                <span>data per halaman</span>
+              </div>
+            </div>
+            <div class="trans-pln">
+                <table>
+                  <tr>
+                    <th>No</th>
+                    <th>Tanggal Transaksi</th>
+                    <th>Deskripsi</th>
+                    <th>Saldo Awal</th>
+                    <th>Debit</th>
+                    <th>Credit</th>
+                    <th>Saldo akhir</th>
+                  </tr>    
+                  <tr>
+                    <td>1</td>
+                    <td>12 Jan 2023 11:54:23</td>
+                    <td>Pembayaran ICONNET</td>
+                    <td>10.000.000</td>
+                    <td>1.000.000</td>
+                    <td>0,0</td>
+                    <td>1.900.000</td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+      </div>
+      </section>
+  </body>
+  <script src="account_statement.js"></script>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+      <section id="header" class="dashboard">
+        <div class="logo-user">
+        <img src="assets/img/logo2.png" alt="" />
+          <div class="user">  
+            <img src="assets/img/user.png" alt="">
+            <div class="dropdown-admin">Admin</div>
+          </div>
+        </div>
+        <div class="navbar">
+            <ul class="menu">
+              <li><a class="active" href="dashboard.html">Dashboard</a></li>
+              <li><a href="statement.html">Account Statement</a></li>
+              <li><a href="transaction.html">Transaction Management</a></li>
+              <li><a href="report.html">Report</a></li>
+              <li><a href="master_bank.html" class="mt-table">Master Table</a></li>
+              <li><a href="user_management.html">User Management</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    
+      <section id="container-dashboard"> 
+        <div class="page-title">
+          <img src="assets/img/vector.png" alt="">
+          <h1>Dashboard PLN Disbursement</h1>
+        </div> 
+        <div class="transaction-dashboard">
+            <div class="trans-pln">
+              <h5>Transaksi PLN Disbursement</h5>
+              <div class="row">
+                <div class="trans">
+                  <img src="assets/img/ellips.png" alt="">
+                  <div class="amount-title">
+                    <img src="assets/img/new-card.png" alt="">
+                    <h1>Transaksi Baru</h1>
+                  </div>
+                  <p class="card-amount">7.028.000</p>
+                  <div class="sum">
+                    <span class="total-transaksi">41 Transaksi</span>
+                  </div>
+                </div>
+                <div class="trans">
+                  <img src="assets/img/ellips.png" alt="">
+                  <div class="amount-title">
+                    <img src="assets/img/success-card.png" alt="">
+                    <h1>Transaksi Berhasil</h1>
+                  </div>
+                  <p class="card-amount">32.650.000</p>
+                  <div class="sum">
+                    <span class="total-transaksi">100 Transaksi</span>
+                  </div>
+                </div>
+                <div class="trans">
+                  <img src="assets/img/ellips.png" alt="">
+                  <div class="amount-title">
+                    <img src="assets/img/failed-card.png" alt="">
+                    <h1>Transaksi Gagal</h1>
+                  </div>
+                  <p class="card-amount">21.627.000</p>
+                  <div class="sum">
+                    <span class="total-transaksi">17 Transaksi</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="succes-credit">
+          <div class="success">
+            <div class="success-title">
+              <h1>Success Rate Transaction</h1>
+            </div>
+            <div class="periode">
+              <span>Pilih Periode</span>
+              <div class="selector">
+                <div id="selectField">
+                  <p id="selectText">Harian</p>
+                  <img src="assets/img/arrow.png" id="arrowIcon">
+                </div>
+                <ul id="list" class="hide">
+                  <li class="options">
+                    <p>Harian</p>
+                  </li>
+                  <li class="options">
+                    <p>Mingguan</p>
+                  </li>
+                  <li class="options">
+                    <p>Bulanan</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="sukses-gagal">
+              <div class="sukses">
+                <h1>Sukses</h1>
+                <h1>0%</h1>
+                <p>0</p>
+                <span>0 Transaksi</span>
+              </div>
+              <div class="line"></div>
+              <div class="gagal">
+                <h1>Gagal</h1>
+                <h1>0%</h1>
+                <p>0</p>
+                <span>0 Transaksi</span>
+              </div>
+            </div>
+          </div>
+          <div class="credit">
+            <div class="credit-title">
+              <h1>Credit Limit</h1>
+            </div>
+            <div class="rekening">
+              <span>Rekening</span>
+              <div class="selector-rekening">
+                <div id="selectField-rekening">
+                  <p id="selectText-rekening">12345 (PLN Icon Plus - Mandiri)</p>
+                  <img src="assets/img/arrowRek.png" id="arrowRek">
+                </div>
+                <ul id="list-rekening" class="hide-rekening">
+                  <li class="options-rekening">
+                    <p>12345 (PLN Icon Plus - Mandiri)</p>
+                  </li>
+                  <li class="options-rekening">
+                    <p>12345 (PLN Icon Plus - BCA)</p>
+                  </li>
+                  <li class="options-rekening ">
+                    <p>12345 (PLN Icon Plus - BNI)</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="limit">
+              <h1>Batas Minimal</h1>
+              <p>200.000</p>
+            </div>
+            <div class="balance">
+              <h1>Saldo Kredit</h1>
+              <p>2.000.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="riwayat">
+          <div class="trans-pln">
+            <h1>5 Transaksi Terakhir</div>
+              <table>
+                <tr>
+                  <th>Transaction ID</th>
+                  <th>Nominal Transfer</th>
+                  <th>Produk</th>
+                  <th>Tanggal Transaksi</th>
+                  <th>Status Transaksi</th>
+                </tr>
+                <tr>
+                  <td>12345678</td>
+                  <td>5.000.000</td>
+                  <td>REFUND ICONNET</td>
+                  <td>12 Jan 2023 11:54:23</td>
+                  <td><span class="status-transaksi">Sudah Transfer</span></td>
+                </tr>
+                <tr>
+                  <td>12345678</td>
+                  <td>5.000.000</td>
+                  <td>REFUND ICONNET</td>
+                  <td>12 Jan 2023 11:54:23</td>
+                  <td><span class="status-transaksi">Sudah Transfer</span></td>
+                </tr>
+                <tr>
+                  <td>12345678</td>
+                  <td>5.000.000</td>
+                  <td>REFUND ICONNET</td>
+                  <td>12 Jan 2023 11:54:23</td>
+                  <td><span class="status-transaksi">Sudah Transfer</span></td>
+                </tr>
+                <tr>
+                  <td>12345678</td>
+                  <td>5.000.000</td>
+                  <td>REFUND ICONNET</td>
+                  <td>12 Jan 2023 11:54:23</td>
+                  <td><span class="status-transaksi">Sudah Transfer</span></td>
+                </tr>
+                <tr>
+                  <td>12345678</td>
+                  <td>5.000.000</td>
+                  <td>REFUND ICONNET</td>
+                  <td>12 Jan 2023 11:54:23</td>
+                  <td><span class="status-transaksi">Sudah Transfer</span></td>
+                </tr>
+              </table>
+          </div>
+      </div>
+      </section>
+  </body>
+  <script src="script-dashboard.js"></script>
+</html>
+
