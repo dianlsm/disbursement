@@ -135,6 +135,49 @@
   top: 2.5rem;
 }
 
+/* forgot password */ddd
+
+.description-forpass h1 {
+  margin-top: 33px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.description-forpass p {
+  margin-top: 18px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #716D6A;
+
+}
+
+.desc-forpass {
+  line-height: 1.5; 
+}
+
+/* Buat Password */
+.description-makepass h1 {
+  margin-top: 33px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.description-makepass p {
+  margin-top: 18px;
+  font-size: 14px;
+  font-weight: 400;
+  /* line-height: 19,6px; */
+  color: #716D6A;
+
+}
+
+.desc-makepass {
+  line-height: 1.5; 
+}
+
+
 
 /* Dashboard */
 

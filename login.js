@@ -11,9 +11,3 @@ toggleImage.addEventListener("click", function() {
       toggleImage.src = "assets/img/eye-visible.png"; // Ganti dengan path gambar mata terbuka
   }
 });
-
-// const formControl = document.querySelector(".form-control");
-
-// formControl.addEventListener("click", function() {
-//   formControl.style.borf
-// }
