@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesomwe.com/releases/v5.10.0/css/all.css"
+    />
+    <title>Transaction Management</title>
+  </head>
+  <body>
+      <section id="header" class="dashboard">
+        <div class="logo-user">
+        <img src="assets/img/logo2.png" alt="" />
+          <div class="user">
+            <img src="assets/img/user.png" alt="">
+            <div class="dropdown-admin">Admin</div>
+          </div>
+        </div>
+        <div class="navbar">
+            <ul class="menu">
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="statement.html">Account Statement</a></li>
+              <li><a class="active" href="transaction.html">Transaction Management</a></li>
+              <li><a href="report.html">Report</a></li>
+              <li><a href="master_bank.html" class="mt-table">Master Table</a></li>
+              <li><a href="user-management.html">User Management</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="container-statement"> 
+        <div class="page-title">
+          <img src="assets/img/vector.png" alt="">
+          <h1>Transaction Management</h1>
+        </div> 
+        <div class="transaction-statement">
+            <div class="trans-pln">
+              <h1>Daftar Transaksi</h1>
+              <!-- navbar filter -->
+              <div class="nav-filter">
+                <ul class="menu-filter">
+                  <li><a class="active" href ="#">Semua</a></li>
+                  <li><a href="#">New</a></li>
+                  <li><a href="#">Approved</a></li>
+                  <li><a href="#">Rejected</a></li>
+                </ul>
+              </div>
+              <div class="coloumn-search">
+                <div class="filter">
+                  <div class="input-bank">
+                    <div id="filter-keyword">
+                      <p id="selectedKeyword">Pilih Keyword</p>
+                      <img src="assets/img/arrow.png" id="arrowIcon3">
+                    </div>
+                    <ul id="list-keyword" class="hide-keyword">
+                      <li class="options-keyword">
+                        <p>ID Transaksi</p>
+                      </li>
+                      <li class="options-keyword">
+                        <p>Tanggal Transaksi</p>
+                      </li>
+                      <li class="options-keyword">
+                        <p>Kategori</p>
+                      </li>
+                      <li class="options-keyword">
+                        <p>Rekening Penerima</p>
+                      </li>
+                      <li class="options-keyword">
+                        <p>Status Transfer</p>
+                      </li>
+                      <li class="options-keyword">
+                        <p>Tanggal Transfer</p>
+                      </li>
+                      <li class="options-keyword">
+                        <p>Customer Transfer</p>
+                      </li>
+                      <li class="options-keyword">
+                        <p>Account Name</p>
+                      </li>
+                    </ul>
+                    <input class="search-value" type="text" name="" id="" placeholder="cari">
+                    <div class="btn-transaction">
+                        <button type="submit">Cari</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="export-page">
+              <button class="icon-button">
+                <i class="fa-solid fa-download"></i>
+                <span class="text">Klik Saya</span>
+              </button>
+              <div class="page-transaction">
+                <span>Tampilkan</span>
+                <div id="select-page-account">
+                  <p id="selectedPageAccount">10</p>
+                  <img src="assets/img/arrowPage.png" id="arrowPageAccount">
+                </div>
+                <ul id="list-page-account" class="hide-account-page">
+                  <li class="pages-options-account">
+                    <p>10</p>
+                  </li>
+                  <li class="pages-options-account">
+                    <p>20</p>
+                  </li>
+                </ul>
+                <span>data per halaman</span>
+              </div>
+            </div>
+            <div class="trans-pln">
+                <table class="tb-transasction">
+                  <tr>
+                    <th><input type="checkbox" class="checked-all"></th>
+                    <th>ID Transaksi</th>
+                    <th>Tanggal Transaksi</th>
+                    <th>Kategori</th>
+                    <th>Customer Transfer </th>
+                    <th>Account Name</th>
+                    <th>Nominal Transfer</th>
+                    <th>Inquiry Number</th>
+                    <th>Bank Penerima</th>
+                    <th>Rekening Penerima</th>
+                    <th>Status Approval</th>
+                    <th>Aksi</th>
+                  </tr>    
+                  <tr>
+                    <td><input type="checkbox" name="pilih"></td>
+                    <td>123456</td>
+                    <td>12 Jan 2023 11:54:23</td>
+                    <td>Refund ICONNET</td>
+                    <td>Asep Sunandar</td>
+                    <td>Tri Marsono</td>
+                    <td>Rp. 100.000</td>
+                    <td>I082778482392534</td>
+                    <td>MANDIRI</td>
+                    <td>67435354</td>
+                    <td><span class="status-transaksi">Sudah</span></td>
+                    <td><img src="assets/img/aksi.png" id="arrowPageAccount"></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="pilih"></td>
+                    <td>123456</td>
+                    <td>12 Jan 2023 11:54:23</td>
+                    <td>Refund ICONNET</td>
+                    <td>Asep Sunandar</td>
+                    <td>Tri Marsono</td>
+                    <td>Rp. 100.000</td>
+                    <td>I082778482392534</td>
+                    <td>MANDIRI</td>
+                    <td>67435354</td>
+                    <td><span class="status-transaksi">Sudah</span></td>
+                    <td><img src="assets/img/aksi.png" id="arrowPageAccount"></td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+      </div>
+      </section>
+  </body>
+  <script src="transaction.js"></script>
+</html>
