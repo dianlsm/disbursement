@@ -42,28 +42,27 @@ for(Bank of optionsBank ){
   }
   
 
-// Page
-const selectPage = document.getElementById("select-page");
-const selectedPage = document.getElementById("selectedPage");
-const pagesOptions = document.getElementsByClassName("pages-options");
-const arrowPage = document.getElementById("arrowPage");
-const listPage = document.getElementById("list-page");
+// rekening
+const valueRek = document.getElementById("value-rekening");
+const selectRek = document.getElementById("selected-rekening");
+const optionsRek = document.getElementsByClassName("optionsRekening");
+const arrowRek = document.getElementById("arrowRek");
+const listRek = document.getElementById("listRekening");
 
 
-selectPage.onclick = function(){
-    listPage.classList.toggle("hide-statement-page");
-    arrowPage.classList.toggle("rotate-statement-page");
+valueRek.onclick = function(){
+    listRek.classList.toggle("hide-statement-rekening");
+    arrowRek.classList.toggle("rotate-statement-rekening");
   }
   
-for(pages of pagesOptions ){
-      pages.onclick = function(){
-      selectedPage.innerHTML = this.textContent;
-      listPage.classList.toggle("hide-statement-page");
-      arrowPage.classList.toggle("rotate-statement-page");
-      
+for(Rekening of optionsRek ){
+      Rekening.onclick = function(){
+      selectRek.innerHTML = this.textContent;
+      listRek.classList.toggle("hide-statement-rekening");
+      arrowRek.classList.toggle("rotate-statement-rekening");
     }
   }
-
+    
 // Add User
 document.getElementById("btn-topup").addEventListener("click", function () {
 document.getElementById("modalToptup").style.display = "block";
@@ -84,3 +83,26 @@ window.addEventListener("click", function (event) {
     document.body.style.overflow = "auto";
   }
 });
+
+
+
+// Page
+const selectPage = document.getElementById("value-page");
+const selectedPage = document.getElementById("selectedPage");
+const pagesOptions = document.getElementsByClassName("pages-options");
+const arrowPage = document.getElementById("arrowPage");
+const listPage = document.getElementById("list-page");
+
+
+selectPage.onclick = function(){
+    listPage.classList.toggle("hide-statement-page");
+    arrowPage.classList.toggle("rotate-statement-page");
+  }
+  
+  for (let pages of pagesOptions) {
+    pages.onclick = function() {
+      selectedPage.textContent = this.textContent;
+      listPage.classList.toggle("hide-statement-page");
+      arrowPage.classList.toggle("rotate-statement-page");
+    };
+  }

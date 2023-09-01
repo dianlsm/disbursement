@@ -309,6 +309,134 @@
   height: auto;
 }
 
+.select-tanggal {
+  margin-top: 10px;
+  width: 257px;
+  height: 44px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+#select-filter {
+  margin-top: 10px;
+  font-size: 14px;
+  width: 170px;
+  height: 44px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#list-filter {
+  width: 170px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  font-weight: 400;
+  background: #fff;
+}
+
+.options-filter {
+  width: 100%;
+  list-style: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+  padding: 10px 10px;
+}
+
+.options-filter:hover {
+  background: #E9F3FA;
+}
+
+.select-keyword {
+  margin-left: 20px;
+}
+
+.aksi img{
+  margin-right: 10px;
+  align-items: center;
+}
+
+#value-bank {
+  margin-left: 20px;
+  margin-top: 30px;
+  width: 497px;
+  height: 44px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+#list-bank {
+  margin-left: 20px;
+  width: 497px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  top: 38px;
+  font-size: 14px;
+  font-weight: 400;
+  background: #fff;
+}
+
+.options-bank {
+  width: 100%;
+  list-style: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+  padding: 10px 10px;
+}
+
+.options-bank:hover {
+  background: #E9F3FA;
+}
+
+.input-account .btn-statement button {
+  margin-left: 138px;
+  margin-top: 30px;
+  height: 45px;
+  width: 124px;
+  background-color: #2886cf;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+} 
+
+.hide-statement {
+  visibility: hidden;
+}
+
+.rotate-statement {
+  transform: rotate(180deg); 
+}
+
+.hide-statement-bank {
+  visibility: hidden;
+}
+
+.rotate-statement-bank {
+  transform: rotate(180deg); 
+}
 
 #btn-topup {
   width: 44px;
@@ -324,7 +452,6 @@
   margin-left: 10px; 
 }
 
-/* Style the modal */
 .modalTop {
   display: none;
   position: fixed;
@@ -336,8 +463,6 @@
   background-color: #716d64;
 }
 
-
-/* Style the modal content */
 .modal-topup {
   background: #e7e6e6;
   margin: 0;
@@ -356,7 +481,6 @@
   margin: 0; 
 }
 
-/* Style the close button */
 .close {
   color: #aaa;
   float: right;
@@ -411,6 +535,68 @@
   width: auto;
 }
 
+#value-rekening {
+  margin-top: 10px; 
+  height: 48px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid #cbcbcb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#listRekening  {
+  width: 100% ;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  font-weight: 400;
+  background: #fff;
+}
+
+.optionsRekening {
+  width: 100%;
+  list-style: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: absolute;
+  padding: 10px 10px;
+  background: #fff;
+  z-index: 1;
+}
+
+.form-input-topup {
+  position: relative;
+}
+
+.form-input-topup .form-group {
+  margin-top: 10px;
+  z-index: 0;
+}
+
+.form-input-topup .form-group input{
+  width: 100%;
+  z-index: 0;
+}
+
+.hide-statement-rekening {
+  visibility: hidden;
+}
+
+.rotate-statement-rekening {
+  transform: rotate(180deg); 
+}
+
+.optionsRekening:hover {
+  background: #E9F3FA;
+}
+
 .form-control {
   width: 100%;
   padding: 6px 12px;
@@ -424,8 +610,6 @@
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
-
-
 
 .evidence {
   height: 48px;
@@ -513,6 +697,60 @@
 .col {
   background-color: #716d64;
 }
+
+
+
+
+#value-page {
+  font-size: 14px;
+  width: 91px;
+  height: 36px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+#list-page {
+  width: 91px;
+  height: auto;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  top: 38px;
+  font-size: 14px;
+  font-weight: 400;
+  background: #fff;
+  /* position: absolute; */
+}
+
+.pages-options {
+  width: 91px;
+  height: 36px;
+  list-style: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+  padding: 10px 10px;
+}
+
+
+.pages-options:hover {
+  background: #E9F3FA;
+}
+
+
+.hide-statement-page {
+  visibility: hidden;
+}
+
+.rotate-statement-page {
+  transform: rotate(180deg); 
+}
+
 /* end statement */
 
 
@@ -849,191 +1087,6 @@ tr {
   margin-top: 20px;
 }
 
-/* Statement */
-
-.select-tanggal {
-  margin-top: 10px;
-  width: 257px;
-  height: 44px;
-  padding: 10px;
-  box-sizing: border-box;
-  border-radius: 6px;
-  border: 1px solid #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 14px;
-}
-
-#select-filter {
-  margin-top: 10px;
-  font-size: 14px;
-  width: 170px;
-  height: 44px;
-  padding: 10px;
-  box-sizing: border-box;
-  border-radius: 6px;
-  border: 1px solid #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#list-filter {
-  width: 170px;
-  border-radius: 6px;
-  overflow: hidden;
-  border: 1px solid #ddd;
-  font-size: 14px;
-  font-weight: 400;
-  background: #fff;
-}
-
-.options-filter {
-  width: 100%;
-  list-style: none;
-  cursor: pointer;
-  box-sizing: border-box;
-  position: relative;
-  padding: 10px 10px;
-}
-
-.options-filter:hover {
-  background: #E9F3FA;
-}
-
-.select-keyword {
-  margin-left: 20px;
-}
-
-.aksi img{
-  margin-right: 10px;
-  align-items: center;
-}
-
-#list-bank {
-  margin-left: 20px;
-  width: 497px;
-  border-radius: 6px;
-  overflow: hidden;
-  border: 1px solid #ddd;
-  top: 38px;
-  font-size: 14px;
-  font-weight: 400;
-  background: #fff;
-}
-
-.options-bank {
-  width: 100%;
-  list-style: none;
-  cursor: pointer;
-  box-sizing: border-box;
-  position: relative;
-  padding: 10px 10px;
-}
-
-.options-bank:hover {
-  background: #E9F3FA;
-}
-
-#value-bank {
-  margin-left: 20px;
-  margin-top: 30px;
-  width: 497px;
-  height: 44px;
-  padding: 10px;
-  box-sizing: border-box;
-  border-radius: 6px;
-  border: 1px solid #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 14px;
-}
-
-
-.input-account .btn-statement button {
-  margin-left: 138px;
-  margin-top: 30px;
-  height: 45px;
-  width: 124px;
-  background-color: #2886cf;
-  font-size: 14px;
-  font-weight: 500;
-  color: #fff;
-  border-radius: 8px;
-  border: none;
-} 
-
-
-.hide-statement {
-  visibility: hidden;
-}
-
-.rotate-statement {
-  transform: rotate(180deg); 
-}
-
-.hide-statement-bank {
-  visibility: hidden;
-}
-
-.rotate-statement-bank {
-  transform: rotate(180deg); 
-}
-
-#select-page {
-  font-size: 14px;
-  width: 91px;
-  height: 36px;
-  padding: 10px;
-  box-sizing: border-box;
-  border-radius: 6px;
-  border: 1px solid #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-right: 10px;
-}
-
-#list-page {
-  width: 91px;
-  height: 36px;
-  border-radius: 6px;
-  overflow: hidden;
-  border: 1px solid #ddd;
-  top: 38px;
-  font-size: 14px;
-  font-weight: 400;
-  background: #fff;
-  position: absolute;
-}
-
-.pages-options {
-  width: 91px;
-  height: 36px;
-  list-style: none;
-  cursor: pointer;
-  box-sizing: border-box;
-  padding: 10px 10px;
-}
-
-.pages-options:hover {
-  background: #E9F3FA;
-}
-
-
-.hide-statement-page {
-  visibility: hidden;
-}
-
-.rotate-statement-page {
-  transform: rotate(180deg); 
-}
-
-
-
-/* End Statement */
 .rekening span {
   margin-right: 10px;
 }
@@ -1437,6 +1490,7 @@ tr {
   margin-bottom: 5px;
   width: 100%;  
   align-content: center;
+  align-items: center;
 }
 
 .unduhTop-page button {
@@ -1822,7 +1876,7 @@ input:checked + .slider:before {
 }
 
 
-.btn-export {
+/* .btn-export {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1836,13 +1890,43 @@ input:checked + .slider:before {
   
 }
 
+.export {display: flex;} */
+
+
 .export-page {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
+  margin-left: 5px;
   width: 100%;  
   align-content: center;
   display: inline-flex;
+} 
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.icon {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.text {
+  font-size: 16px;
+}
+
+/* Efek hover saat kursor diarahkan ke tombol */
+.icon-button:hover {
+  background-color: #2980b9;
 }
 
 .page-transaction {

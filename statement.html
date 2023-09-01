@@ -22,7 +22,7 @@
               <li><a class="active" href="statement.html">Account Statement</a></li>
               <li><a href="transaction.html">Transaction Management</a></li>
               <li><a href="report.html">Report</a></li>
-              <li><a href="table.html" class="mt-table">Master Table</a></li>
+              <li><a href="master_bank.html" class="mt-table">Master Table</a></li>
               <li><a href="user_management.html">User Management</a></li>
             </ul>
           </div>
@@ -103,9 +103,28 @@
                     <div class="form-input-topup">
                        <form action="/action_page.php">
                         <label for="fname">Nomor Rekening</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Nomor Rekening" >
-                        <label for="lname">Nominal Topup</label>
-                        <input type="text" id="lname" name="lastname" placeholder="0">
+                        <div id="value-rekening">
+                          <p id="selected-rekening">Mandiri - 123456</p>
+                          <img src="assets/img/arrowBank.png" id="arrowRek">
+                        </div>
+                        <ul id="listRekening" class="hide-statement-rekening">
+                          <li class="optionsRekening">
+                            <p>123456789 (PLN Icon Plus - Mandiri)</p>
+                          </li>
+                          <li class="optionsRekening">
+                            <p>123456789 (PLN Icon Plus - BRI)</p>
+                          </li>
+                          <li class="optionsRekening">
+                            <p>123456789 (PLN Icon Plus - BSI)</p>
+                          </li>
+                          <li class="optionsRekening">
+                            <p>123456789 (PLN Icon Plus - BNI)</p>
+                          </li>
+                        </ul>
+                        <div class="form-group">
+                          <label for="">Nominal Topup</label>
+                          <input type="text" id="txtUserName" class="form-control" placeholder="0"/>
+                        </div>
                       </form>
                       <div class="evidence">
                         <label for="">Evidence Topup</label>
@@ -130,18 +149,23 @@
               </div>
               <div class="page">
                 <span>Tampilkan</span>
-                <div id="select-page">
-                  <p id="selectedPage">10</p>
-                  <img src="assets/img/arrowPage.png" id="arrowPage">
+                <div class="select-page">
+                  <div id="value-page">
+                    <p id="selectedPage">10</p>
+                    <img src="assets/img/arrowPage.png" id="arrowPage">
+                  </div>
+                  <ul id="list-page" class="hide-statement-page">
+                    <li class="pages-options">
+                      <p>40</p>
+                    </li>
+                    <li class="pages-options">
+                      <p>20</p>
+                    </li>
+                    <li class="pages-options">
+                      <p>30</p>
+                    </li>
+                  </ul>
                 </div>
-                <ul id="list-page" class="hide-statement-page">
-                  <li class="pages-options">
-                    <p>10</p>
-                  </li>
-                  <li class="pages-options">
-                    <p>20</p>
-                  </li>
-                </ul>
                 <span>data per halaman</span>
               </div>
             </div>
