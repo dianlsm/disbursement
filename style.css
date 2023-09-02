@@ -261,7 +261,7 @@
 #container-statement {
   background-color: #eeeeee;
   box-sizing: border-box;
-  height: 650px;
+  height: auto;
 }
 
 .container-page {
@@ -303,7 +303,6 @@
   padding: 10px;
   margin: 8px auto;
   width: 210vh;
-  height: 500px;
   background-color: #fff;
   border-radius: 10px;
   height: auto;
@@ -903,10 +902,6 @@
   display: flex;
 }
 
-
-
-
-
 .sukses {
   padding: 20px 10px;
 }
@@ -1116,20 +1111,13 @@ tr {
   align-content: center;
 }
 
-
-/* .unduh-page {
-  width: 1270px;
-  margin: 5px auto;
-  padding-top: 30px;
-} */
-
 .page {
   display: flex;
-  align-items: center;
 }
 
 .page span {
   margin-right: 10px;
+  padding-top: 10px;
   font-size: 14px;
 }
 
@@ -1482,21 +1470,27 @@ tr {
   transform: rotate(180deg); 
 }
 
+
 .unduhTop-page{
-  display: flex;
-  justify-content: space-between;
   margin-top: 40px;
   margin-left: -5px;
-  margin-bottom: 5px;
   width: 100%;  
   align-content: center;
-  align-items: center;
+  
 }
 
 .unduhTop-page button {
   margin-left: 5px;
 }
 
+.unduhTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.select-page {
+  display: block;
+}
 
 /* master bank */
 .input-bank {

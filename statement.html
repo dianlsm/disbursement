@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Account Statement</title>
   </head>
-  <body class="col">
+  <body>
       <section id="header" class="dashboard">
         <div class="logo-user">
         <img src="assets/img/logo2.png" alt="" />
@@ -92,8 +92,10 @@
             </div>
             <div class="unduhTop-page">
               <div class="unduhTop">
-                <button id="btn-adduser"><img src="assets/img/unduh.png" alt="Image"></button>
-                <button id="btn-topup"><img src="assets/img/topup.png" alt="Image"></button>
+                <div class="btn-untop">
+                  <button id="btn-adduser"><img src="assets/img/unduh.png" alt="Image"></button>
+                  <button id="btn-topup"><img src="assets/img/topup.png" alt="Image"></button>
+                </div>
                 <div id="modalToptup" class="modalTop">
                   <div class="modal-topup">
                     <div class="title-close-topup">
@@ -146,27 +148,27 @@
                     </footer>
                   </div>
                 </div>
-              </div>
-              <div class="page">
-                <span>Tampilkan</span>
-                <div class="select-page">
-                  <div id="value-page">
-                    <p id="selectedPage">10</p>
-                    <img src="assets/img/arrowPage.png" id="arrowPage">
+                <div class="page">
+                  <span>Tampilkan</span>
+                  <div class="select-page">
+                    <div id="value-page">
+                      <p id="selectedPage">10</p>
+                      <img src="assets/img/arrowPage.png" id="arrowPage">
+                    </div>
+                    <ul id="list-page" class="hide-statement-page">
+                      <li class="pages-options">
+                        <p>40</p>
+                      </li>
+                      <li class="pages-options">
+                        <p>20</p>
+                      </li>
+                      <li class="pages-options">
+                        <p>30</p>
+                      </li>
+                    </ul>
                   </div>
-                  <ul id="list-page" class="hide-statement-page">
-                    <li class="pages-options">
-                      <p>40</p>
-                    </li>
-                    <li class="pages-options">
-                      <p>20</p>
-                    </li>
-                    <li class="pages-options">
-                      <p>30</p>
-                    </li>
-                  </ul>
+                  <span>data per halaman</span>
                 </div>
-                <span>data per halaman</span>
               </div>
             </div>
             <div class="trans-pln">
